@@ -14,7 +14,7 @@ ggplot(nypp) +
 ny_crime <- read_xls("felony.xls", skip = 2) |> 
   fill(PCT) |> 
   filter(CRIME == "ROBBERY") |> 
-  select(Precinct = PCT, CRIME, Robbery = `2021`) |> 
+  select(Precinct = PCT, CRIME, Robbery = `2011`) |> 
   mutate(Precinct = as.numeric(Precinct))
 
 plot_data <- left_join(nypp, ny_crime)
