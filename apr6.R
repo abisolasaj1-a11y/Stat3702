@@ -24,4 +24,4 @@ ggplot(plot_data) +
   geom_sf(aes(fill = Robbery)) + 
   geom_sf_text(aes(label = Precinct), size = 2,
                color = "white") +
-  theme_void()
+  theme_classic()
